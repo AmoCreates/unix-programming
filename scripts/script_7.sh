@@ -31,3 +31,15 @@ echo "The updated second element of the array is: ${myArray[1]}"
 myArray+=(6)
 echo "The new element added to the array is: ${myArray[6]}"
 echo "All elements of the array after adding a new element: ${myArray[@]}"
+
+
+printf "\n"
+# how to store key value pair in an array
+declare -A myDict
+myDict["name"]="Alice"
+myDict["age"]=30
+myDict["city"]="New York"
+
+echo "The value of name is: ${myDict["name"]}"
+echo "The value of age is: ${myDict["age"]}"
+echo "The value of city is: ${myDict["city"]}"
